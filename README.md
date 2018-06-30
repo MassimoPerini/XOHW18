@@ -1,1 +1,5 @@
-# XOHW18
+# PYNQube
+
+Image Recognition is becoming a crucial feature in more and more applications ranging from smart cities to autonomous vehicles. Many embedded applications demand an efficient implementation of this technology trying to reduce latency and satisfying several power constraints. Convolutional Neural Networks (CNNs) are the best-performing technology currently available therefore they are typically used in computer vision. Of course they have drawbacks too, one of them is a very high computational complexity.
+
+The goal of our project is to implement part of the convolutional (feature extraction) and subsampling (distortion invariance) layers in hardware. In doing so, we would like to obtain a less dimensional output stream in which high order level features are extracted. Furthermore, a fog computing paradigm can be applied in order to send these features to a cluster. This kind of technology can be used in many different ways and we would like to implement it in an extremely fast real-time Rubik cube resolver adopting Partial Dynamic Reconfiguration.
