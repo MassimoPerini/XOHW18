@@ -1,0 +1,339 @@
+
+
+================================================================
+== Vivado HLS Report for 'matrixAvg'
+================================================================
+* Date:           Sat Jun 30 19:25:55 2018
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        matrixAvg
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      9.63|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  7354|  7354|  7355|  7355|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |          |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  1800|  1800|         2|          -|          -|   900|    no    |
+        |- Loop 2  |  1800|  1800|         2|          -|          -|   900|    no    |
+        |- Loop 3  |  1800|  1800|         2|          -|          -|   900|    no    |
+        |- Loop 4  |     9|     9|         1|          -|          -|     9|    no    |
+        |- Loop 5  |  1800|  1800|         3|          2|          1|   900|    yes   |
+        |- Loop 6  |    54|    54|         6|          -|          -|     9|    no    |
+        |- Loop 7  |    27|    27|         3|          -|          -|     9|    no    |
+        |- Loop 8  |    27|    27|         3|          -|          -|     9|    no    |
+        |- Loop 9  |    27|    27|         3|          -|          -|     9|    no    |
+        +----------+------+------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      1|       -|      -|
+|Expression       |        -|      -|    1474|    818|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|     12|     519|    162|
+|Memory           |        6|      -|     384|     30|
+|Multiplexer      |        -|      -|       -|    698|
+|Register         |        -|      -|     818|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        6|     13|    3195|   1708|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        2|      5|       3|      3|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+-----+----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF | LUT|
+    +-------------------------+----------------------+---------+-------+-----+----+
+    |matrixAvg_mul_32seOg_U1  |matrixAvg_mul_32seOg  |        0|      4|  173|  54|
+    |matrixAvg_mul_32seOg_U2  |matrixAvg_mul_32seOg  |        0|      4|  173|  54|
+    |matrixAvg_mul_32seOg_U3  |matrixAvg_mul_32seOg  |        0|      4|  173|  54|
+    +-------------------------+----------------------+---------+-------+-----+----+
+    |Total                    |                      |        0|     12|  519| 162|
+    +-------------------------+----------------------+---------+-------+-----+----+
+
+    * DSP48: 
+    +-------------------------+----------------------+--------------+
+    |         Instance        |        Module        |  Expression  |
+    +-------------------------+----------------------+--------------+
+    |matrixAvg_mac_mulfYi_U4  |matrixAvg_mac_mulfYi  | i0 + i1 * i2 |
+    +-------------------------+----------------------+--------------+
+
+    * Memory: 
+    +------------------+----------------------+---------+----+----+------+-----+------+-------------+
+    |      Memory      |        Module        | BRAM_18K| FF | LUT| Words| Bits| Banks| W*Bits*Banks|
+    +------------------+----------------------+---------+----+----+------+-----+------+-------------+
+    |cell_avg_red_U    |matrixAvg_cell_avbkb  |        0|  64|   5|     9|   32|     1|          288|
+    |cell_avg_blue_U   |matrixAvg_cell_avbkb  |        0|  64|   5|     9|   32|     1|          288|
+    |cell_avg_green_U  |matrixAvg_cell_avbkb  |        0|  64|   5|     9|   32|     1|          288|
+    |sum_red_U         |matrixAvg_cell_avbkb  |        0|  64|   5|     9|   32|     1|          288|
+    |sum_blue_U        |matrixAvg_cell_avbkb  |        0|  64|   5|     9|   32|     1|          288|
+    |sum_green_U       |matrixAvg_cell_avbkb  |        0|  64|   5|     9|   32|     1|          288|
+    |red_U             |matrixAvg_red         |        2|   0|   0|   900|   32|     1|        28800|
+    |green_U           |matrixAvg_red         |        2|   0|   0|   900|   32|     1|        28800|
+    |blue_U            |matrixAvg_red         |        2|   0|   0|   900|   32|     1|        28800|
+    +------------------+----------------------+---------+----+----+------+-----+------+-------------+
+    |Total             |                      |        6| 384|  30|  2754|  288|     9|        88128|
+    +------------------+----------------------+---------+----+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------+----------+-------+-----+----+------------+------------+
+    |           Variable Name           | Operation| DSP48E|  FF | LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------+----------+-------+-----+----+------------+------------+
+    |i_10_fu_636_p2                     |     +    |      0|   26|  12|           7|           1|
+    |i_11_fu_668_p2                     |     +    |      0|   17|   9|           4|           1|
+    |i_12_fu_894_p2                     |     +    |      0|   17|   9|           4|           1|
+    |i_13_fu_911_p2                     |     +    |      0|   17|   9|           4|           1|
+    |i_14_fu_928_p2                     |     +    |      0|   17|   9|           4|           1|
+    |i_6_fu_521_p2                      |     +    |      0|   35|  15|          10|           1|
+    |i_7_fu_538_p2                      |     +    |      0|   35|  15|          10|           1|
+    |i_8_fu_555_p2                      |     +    |      0|   35|  15|          10|           1|
+    |i_9_fu_572_p2                      |     +    |      0|   17|   9|           4|           1|
+    |indvar_flatten_next_fu_584_p2      |     +    |      0|   35|  15|          10|           1|
+    |j_s_fu_604_p2                      |     +    |      0|   17|   9|           4|           1|
+    |tmp_15_fu_641_p2                   |     +    |      0|  101|  37|          32|          32|
+    |tmp_16_fu_648_p2                   |     +    |      0|  101|  37|          32|          32|
+    |tmp_17_fu_655_p2                   |     +    |      0|  101|  37|          32|          32|
+    |neg_mul1_fu_762_p2                 |     -    |      0|  200|  70|           1|          65|
+    |neg_mul2_fu_804_p2                 |     -    |      0|  200|  70|           1|          65|
+    |neg_mul_fu_846_p2                  |     -    |      0|  200|  70|           1|          65|
+    |neg_ti1_fu_791_p2                  |     -    |      0|  101|  37|           1|          32|
+    |neg_ti2_fu_833_p2                  |     -    |      0|  101|  37|           1|          32|
+    |neg_ti_fu_875_p2                   |     -    |      0|  101|  37|           1|          32|
+    |mat_in_V_data_V_0_load_A           |    and   |      0|    0|   2|           1|           1|
+    |mat_in_V_data_V_0_load_B           |    and   |      0|    0|   2|           1|           1|
+    |mat_out_V_data_V_1_load_A          |    and   |      0|    0|   2|           1|           1|
+    |mat_out_V_data_V_1_load_B          |    and   |      0|    0|   2|           1|           1|
+    |mat_out_V_last_V_1_load_A          |    and   |      0|    0|   2|           1|           1|
+    |mat_out_V_last_V_1_load_B          |    and   |      0|    0|   2|           1|           1|
+    |exitcond2_fu_888_p2                |   icmp   |      0|    0|   2|           4|           4|
+    |exitcond3_fu_905_p2                |   icmp   |      0|    0|   2|           4|           4|
+    |exitcond_flatten_fu_578_p2         |   icmp   |      0|    0|   5|          10|           8|
+    |exitcond_fu_922_p2                 |   icmp   |      0|    0|   2|           4|           4|
+    |mat_in_V_data_V_0_state_cmp_full   |   icmp   |      0|    0|   1|           2|           1|
+    |mat_out_V_data_V_1_state_cmp_full  |   icmp   |      0|    0|   1|           2|           1|
+    |mat_out_V_last_V_1_state_cmp_full  |   icmp   |      0|    0|   1|           2|           1|
+    |tmp_1_fu_566_p2                    |   icmp   |      0|    0|   2|           4|           4|
+    |tmp_4_fu_532_p2                    |   icmp   |      0|    0|   5|          10|           8|
+    |tmp_7_fu_662_p2                    |   icmp   |      0|    0|   2|           4|           4|
+    |tmp_8_fu_549_p2                    |   icmp   |      0|    0|   5|          10|           8|
+    |tmp_9_fu_590_p2                    |   icmp   |      0|    0|   4|           7|           6|
+    |tmp_fu_515_p2                      |   icmp   |      0|    0|   5|          10|           8|
+    |tmp_last_V_fu_939_p2               |   icmp   |      0|    0|   2|           4|           5|
+    |ap_block_state25                   |    or    |      0|    0|   2|           1|           1|
+    |i_4_mid2_fu_596_p3                 |  select  |      0|    0|   7|           1|           1|
+    |tmp_11_fu_797_p3                   |  select  |      0|    0|  32|           1|          32|
+    |tmp_12_fu_839_p3                   |  select  |      0|    0|  32|           1|          32|
+    |tmp_13_fu_881_p3                   |  select  |      0|    0|  32|           1|          32|
+    |tmp_23_fu_784_p3                   |  select  |      0|    0|  32|           1|          32|
+    |tmp_26_fu_826_p3                   |  select  |      0|    0|  32|           1|          32|
+    |tmp_29_fu_868_p3                   |  select  |      0|    0|  32|           1|          32|
+    |tmp_3_mid2_v_v_fu_610_p3           |  select  |      0|    0|   4|           1|           4|
+    |ap_enable_pp0                      |    xor   |      0|    0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1            |    xor   |      0|    0|   2|           1|           2|
+    +-----------------------------------+----------+-------+-----+----+------------+------------+
+    |Total                              |          |      0| 1474| 818|         267|         672|
+    +-----------------------------------+----------+-------+-----+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------+-----+-----------+-----+-----------+
+    |             Name             | LUT | Input Size| Bits| Total Bits|
+    +------------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                     |  125|         27|    1|         27|
+    |ap_enable_reg_pp0_iter1       |   15|          3|    1|          3|
+    |blue_address0                 |   15|          3|   10|         30|
+    |cell_avg_blue_address0        |   15|          3|    4|         12|
+    |cell_avg_green_address0       |   15|          3|    4|         12|
+    |cell_avg_red_address0         |   15|          3|    4|         12|
+    |green_address0                |   15|          3|   10|         30|
+    |i3_reg_475                    |    9|          2|    4|          8|
+    |i4_reg_486                    |    9|          2|    4|          8|
+    |i6_reg_497                    |    9|          2|    4|          8|
+    |i_1_reg_396                   |    9|          2|   10|         20|
+    |i_2_reg_408                   |    9|          2|   10|         20|
+    |i_3_reg_420                   |    9|          2|    4|          8|
+    |i_4_phi_fu_457_p4             |    9|          2|    7|         14|
+    |i_4_reg_453                   |    9|          2|    7|         14|
+    |i_5_reg_464                   |    9|          2|    4|          8|
+    |i_reg_384                     |    9|          2|   10|         20|
+    |indvar_flatten_phi_fu_435_p4  |    9|          2|   10|         20|
+    |indvar_flatten_reg_431        |    9|          2|   10|         20|
+    |j_phi_fu_446_p4               |    9|          2|    4|          8|
+    |j_reg_442                     |    9|          2|    4|          8|
+    |mat_in_TDATA_blk_n            |    9|          2|    1|          2|
+    |mat_in_V_data_V_0_data_out    |    9|          2|   32|         64|
+    |mat_in_V_data_V_0_state       |   15|          3|    2|          6|
+    |mat_in_V_dest_V_0_state       |   15|          3|    2|          6|
+    |mat_out_TDATA_blk_n           |    9|          2|    1|          2|
+    |mat_out_V_data_V_1_data_in    |   21|          4|   32|        128|
+    |mat_out_V_data_V_1_data_out   |    9|          2|   32|         64|
+    |mat_out_V_data_V_1_state      |   15|          3|    2|          6|
+    |mat_out_V_dest_V_1_state      |   15|          3|    2|          6|
+    |mat_out_V_id_V_1_state        |   15|          3|    2|          6|
+    |mat_out_V_keep_V_1_state      |   15|          3|    2|          6|
+    |mat_out_V_last_V_1_data_in    |   15|          3|    1|          3|
+    |mat_out_V_last_V_1_data_out   |    9|          2|    1|          2|
+    |mat_out_V_last_V_1_state      |   15|          3|    2|          6|
+    |mat_out_V_strb_V_1_state      |   15|          3|    2|          6|
+    |mat_out_V_user_V_1_state      |   15|          3|    2|          6|
+    |red_address0                  |   15|          3|   10|         30|
+    |sum_blue_address0             |   27|          5|    4|         20|
+    |sum_blue_d0                   |   15|          3|   32|         96|
+    |sum_green_address0            |   27|          5|    4|         20|
+    |sum_green_d0                  |   15|          3|   32|         96|
+    |sum_red_address0              |   27|          5|    4|         20|
+    |sum_red_d0                    |   15|          3|   32|         96|
+    +------------------------------+-----+-----------+-----+-----------+
+    |Total                         |  698|        144|  362|       1007|
+    +------------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------+----+----+-----+-----------+
+    |             Name             | FF | LUT| Bits| Const Bits|
+    +------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                     |  26|   0|   26|          0|
+    |ap_enable_reg_pp0_iter0       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1       |   1|   0|    1|          0|
+    |exitcond_flatten_reg_1002     |   1|   0|    1|          0|
+    |i3_reg_475                    |   4|   0|    4|          0|
+    |i4_reg_486                    |   4|   0|    4|          0|
+    |i6_reg_497                    |   4|   0|    4|          0|
+    |i_10_reg_1054                 |   7|   0|    7|          0|
+    |i_11_reg_1062                 |   4|   0|    4|          0|
+    |i_12_reg_1185                 |   4|   0|    4|          0|
+    |i_13_reg_1203                 |   4|   0|    4|          0|
+    |i_14_reg_1221                 |   4|   0|    4|          0|
+    |i_1_reg_396                   |  10|   0|   10|          0|
+    |i_2_reg_408                   |  10|   0|   10|          0|
+    |i_3_reg_420                   |   4|   0|    4|          0|
+    |i_4_mid2_reg_1011             |   7|   0|    7|          0|
+    |i_4_reg_453                   |   7|   0|    7|          0|
+    |i_5_reg_464                   |   4|   0|    4|          0|
+    |i_6_reg_957                   |  10|   0|   10|          0|
+    |i_7_reg_965                   |  10|   0|   10|          0|
+    |i_8_reg_973                   |  10|   0|   10|          0|
+    |i_reg_384                     |  10|   0|   10|          0|
+    |indvar_flatten_next_reg_1006  |  10|   0|   10|          0|
+    |indvar_flatten_reg_431        |  10|   0|   10|          0|
+    |j_reg_442                     |   4|   0|    4|          0|
+    |mat_in_V_data_V_0_payload_A   |  32|   0|   32|          0|
+    |mat_in_V_data_V_0_payload_B   |  32|   0|   32|          0|
+    |mat_in_V_data_V_0_sel_rd      |   1|   0|    1|          0|
+    |mat_in_V_data_V_0_sel_wr      |   1|   0|    1|          0|
+    |mat_in_V_data_V_0_state       |   2|   0|    2|          0|
+    |mat_in_V_dest_V_0_state       |   2|   0|    2|          0|
+    |mat_out_V_data_V_1_payload_A  |  32|   0|   32|          0|
+    |mat_out_V_data_V_1_payload_B  |  32|   0|   32|          0|
+    |mat_out_V_data_V_1_sel_rd     |   1|   0|    1|          0|
+    |mat_out_V_data_V_1_sel_wr     |   1|   0|    1|          0|
+    |mat_out_V_data_V_1_state      |   2|   0|    2|          0|
+    |mat_out_V_dest_V_1_sel_rd     |   1|   0|    1|          0|
+    |mat_out_V_dest_V_1_state      |   2|   0|    2|          0|
+    |mat_out_V_id_V_1_sel_rd       |   1|   0|    1|          0|
+    |mat_out_V_id_V_1_state        |   2|   0|    2|          0|
+    |mat_out_V_keep_V_1_sel_rd     |   1|   0|    1|          0|
+    |mat_out_V_keep_V_1_state      |   2|   0|    2|          0|
+    |mat_out_V_last_V_1_payload_A  |   1|   0|    1|          0|
+    |mat_out_V_last_V_1_payload_B  |   1|   0|    1|          0|
+    |mat_out_V_last_V_1_sel_rd     |   1|   0|    1|          0|
+    |mat_out_V_last_V_1_sel_wr     |   1|   0|    1|          0|
+    |mat_out_V_last_V_1_state      |   2|   0|    2|          0|
+    |mat_out_V_strb_V_1_sel_rd     |   1|   0|    1|          0|
+    |mat_out_V_strb_V_1_state      |   2|   0|    2|          0|
+    |mat_out_V_user_V_1_sel_rd     |   1|   0|    1|          0|
+    |mat_out_V_user_V_1_state      |   2|   0|    2|          0|
+    |mul1_reg_1137                 |  65|   0|   65|          0|
+    |mul9_reg_1147                 |  65|   0|   65|          0|
+    |mul_reg_1157                  |  65|   0|   65|          0|
+    |sum_blue_addr_1_reg_1049      |   4|   0|    4|          0|
+    |sum_blue_load_reg_1111        |  32|   0|   32|          0|
+    |sum_green_addr_1_reg_1039     |   4|   0|    4|          0|
+    |sum_green_load_reg_1100       |  32|   0|   32|          0|
+    |sum_red_addr_1_reg_1029       |   4|   0|    4|          0|
+    |sum_red_load_reg_1089         |  32|   0|   32|          0|
+    |tmp_10_reg_1067               |   4|   0|   64|         60|
+    |tmp_11_reg_1167               |  32|   0|   32|          0|
+    |tmp_12_reg_1172               |  32|   0|   32|          0|
+    |tmp_13_reg_1177               |  32|   0|   32|          0|
+    |tmp_30_reg_1094               |   1|   0|    1|          0|
+    |tmp_32_reg_1142               |  26|   0|   26|          0|
+    |tmp_33_reg_1105               |   1|   0|    1|          0|
+    |tmp_35_reg_1152               |  26|   0|   26|          0|
+    |tmp_36_reg_1116               |   1|   0|    1|          0|
+    |tmp_38_reg_1162               |  26|   0|   26|          0|
+    |tmp_3_mid2_v_v_reg_1017       |   4|   0|    4|          0|
+    |tmp_last_V_reg_1231           |   1|   0|    1|          0|
+    +------------------------------+----+----+-----+-----------+
+    |Total                         | 818|   0|  878|         60|
+    +------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+--------------+------------------+--------------+
+|    RTL Ports   | Dir | Bits|   Protocol   |   Source Object  |    C Type    |
++----------------+-----+-----+--------------+------------------+--------------+
+|ap_clk          |  in |    1| ap_ctrl_none |     matrixAvg    | return value |
+|ap_rst_n        |  in |    1| ap_ctrl_none |     matrixAvg    | return value |
+|mat_in_TDATA    |  in |   32|     axis     |  mat_in_V_data_V |    pointer   |
+|mat_in_TVALID   |  in |    1|     axis     |  mat_in_V_dest_V |    pointer   |
+|mat_in_TREADY   | out |    1|     axis     |  mat_in_V_dest_V |    pointer   |
+|mat_in_TDEST    |  in |    1|     axis     |  mat_in_V_dest_V |    pointer   |
+|mat_in_TKEEP    |  in |    4|     axis     |  mat_in_V_keep_V |    pointer   |
+|mat_in_TSTRB    |  in |    4|     axis     |  mat_in_V_strb_V |    pointer   |
+|mat_in_TUSER    |  in |    1|     axis     |  mat_in_V_user_V |    pointer   |
+|mat_in_TLAST    |  in |    1|     axis     |  mat_in_V_last_V |    pointer   |
+|mat_in_TID      |  in |    1|     axis     |   mat_in_V_id_V  |    pointer   |
+|mat_out_TDATA   | out |   32|     axis     | mat_out_V_data_V |    pointer   |
+|mat_out_TVALID  | out |    1|     axis     | mat_out_V_dest_V |    pointer   |
+|mat_out_TREADY  |  in |    1|     axis     | mat_out_V_dest_V |    pointer   |
+|mat_out_TDEST   | out |    1|     axis     | mat_out_V_dest_V |    pointer   |
+|mat_out_TKEEP   | out |    4|     axis     | mat_out_V_keep_V |    pointer   |
+|mat_out_TSTRB   | out |    4|     axis     | mat_out_V_strb_V |    pointer   |
+|mat_out_TUSER   | out |    1|     axis     | mat_out_V_user_V |    pointer   |
+|mat_out_TLAST   | out |    1|     axis     | mat_out_V_last_V |    pointer   |
+|mat_out_TID     | out |    1|     axis     |  mat_out_V_id_V  |    pointer   |
++----------------+-----+-----+--------------+------------------+--------------+
+

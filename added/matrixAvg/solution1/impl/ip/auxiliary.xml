@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="matrixAvg" xd:componentRef="matrixAvg" xd:initiationInterval="7355" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="mat_in.data" xd:originalName="mat_in" xd:direction="in" xd:interfaceRef="mat_in" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="mat_in.keep" xd:originalName="mat_in" xd:direction="in" xd:interfaceRef="mat_in" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="mat_in.strb" xd:originalName="mat_in" xd:direction="in" xd:interfaceRef="mat_in" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="mat_in.user" xd:originalName="mat_in" xd:direction="in" xd:interfaceRef="mat_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="mat_in.last" xd:originalName="mat_in" xd:direction="in" xd:interfaceRef="mat_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="mat_in.id" xd:originalName="mat_in" xd:direction="in" xd:interfaceRef="mat_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="mat_in.dest" xd:originalName="mat_in" xd:direction="in" xd:interfaceRef="mat_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="mat_out.data" xd:originalName="mat_out" xd:direction="out" xd:interfaceRef="mat_out" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="mat_out.keep" xd:originalName="mat_out" xd:direction="out" xd:interfaceRef="mat_out" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="mat_out.strb" xd:originalName="mat_out" xd:direction="out" xd:interfaceRef="mat_out" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="mat_out.user" xd:originalName="mat_out" xd:direction="out" xd:interfaceRef="mat_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="mat_out.last" xd:originalName="mat_out" xd:direction="out" xd:interfaceRef="mat_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="mat_out.id" xd:originalName="mat_out" xd:direction="out" xd:interfaceRef="mat_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="mat_out.dest" xd:originalName="mat_out" xd:direction="out" xd:interfaceRef="mat_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="7354" xd:worst-case="7354" xd:average-case="7354"/>
+  <xd:resourceEstimates xd:LUT="1708" xd:FF="3195" xd:BRAM="6" xd:DSP="13"/>
+</xd:acceleratorMap>

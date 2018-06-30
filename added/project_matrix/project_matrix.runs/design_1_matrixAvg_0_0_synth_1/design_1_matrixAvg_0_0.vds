@@ -1,0 +1,900 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Jun 30 19:34:50 2018
+# Process ID: 34982
+# Current directory: /home/users/qi.zhou/Desktop/project_matrix/project_matrix.runs/design_1_matrixAvg_0_0_synth_1
+# Command line: vivado -log design_1_matrixAvg_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_matrixAvg_0_0.tcl
+# Log file: /home/users/qi.zhou/Desktop/project_matrix/project_matrix.runs/design_1_matrixAvg_0_0_synth_1/design_1_matrixAvg_0_0.vds
+# Journal file: /home/users/qi.zhou/Desktop/project_matrix/project_matrix.runs/design_1_matrixAvg_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_matrixAvg_0_0.tcl -notrace
+Command: synth_design -top design_1_matrixAvg_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 35004 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1265.805 ; gain = 70.996 ; free physical = 313560 ; free virtual = 327343
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_matrixAvg_0_0' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ip/design_1_matrixAvg_0_0/synth/design_1_matrixAvg_0_0.vhd:81]
+INFO: [Synth 8-3491] module 'matrixAvg' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:12' bound to instance 'U0' of component 'matrixAvg' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ip/design_1_matrixAvg_0_0/synth/design_1_matrixAvg_0_0.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'matrixAvg' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:37]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:211]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:214]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:216]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:218]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:221]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:223]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:225]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:227]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:229]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:231]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:238]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:242]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:246]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:250]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:255]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:267]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:278]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:285]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:294]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:298]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:309]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:317]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:323]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:329]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:374]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:386]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:388]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 900 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_red' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_red.vhd:77' bound to instance 'red_U' of component 'matrixAvg_red' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:505]
+INFO: [Synth 8-638] synthesizing module 'matrixAvg_red' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_red.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 900 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_red_ram' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_red.vhd:13' bound to instance 'matrixAvg_red_ram_U' of component 'matrixAvg_red_ram' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_red.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'matrixAvg_red_ram' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_red.vhd:31]
+	Parameter mem_type bound to: block - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 10 - type: integer 
+	Parameter mem_size bound to: 900 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'matrixAvg_red_ram' (1#1) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_red.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'matrixAvg_red' (2#1) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_red.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 900 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_red' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_red.vhd:77' bound to instance 'green_U' of component 'matrixAvg_red' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:519]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 900 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_red' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_red.vhd:77' bound to instance 'blue_U' of component 'matrixAvg_red' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:533]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 9 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_cell_avbkb' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:77' bound to instance 'cell_avg_red_U' of component 'matrixAvg_cell_avbkb' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:547]
+INFO: [Synth 8-638] synthesizing module 'matrixAvg_cell_avbkb' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 9 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_cell_avbkb_ram' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:13' bound to instance 'matrixAvg_cell_avbkb_ram_U' of component 'matrixAvg_cell_avbkb_ram' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'matrixAvg_cell_avbkb_ram' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:31]
+	Parameter mem_type bound to: distributed - type: string 
+	Parameter dwidth bound to: 32 - type: integer 
+	Parameter awidth bound to: 4 - type: integer 
+	Parameter mem_size bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'matrixAvg_cell_avbkb_ram' (3#1) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'matrixAvg_cell_avbkb' (4#1) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:92]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 9 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_cell_avbkb' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:77' bound to instance 'cell_avg_blue_U' of component 'matrixAvg_cell_avbkb' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:561]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 9 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_cell_avbkb' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:77' bound to instance 'cell_avg_green_U' of component 'matrixAvg_cell_avbkb' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:575]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 9 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_cell_avbkb' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:77' bound to instance 'sum_red_U' of component 'matrixAvg_cell_avbkb' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:589]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 9 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_cell_avbkb' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:77' bound to instance 'sum_blue_U' of component 'matrixAvg_cell_avbkb' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:603]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 9 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_cell_avbkb' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_cell_avbkb.vhd:77' bound to instance 'sum_green_U' of component 'matrixAvg_cell_avbkb' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:617]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 34 - type: integer 
+	Parameter dout_WIDTH bound to: 65 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_mul_32seOg' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:51' bound to instance 'matrixAvg_mul_32seOg_U1' of component 'matrixAvg_mul_32seOg' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:631]
+INFO: [Synth 8-638] synthesizing module 'matrixAvg_mul_32seOg' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:67]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 34 - type: integer 
+	Parameter dout_WIDTH bound to: 65 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_mul_32seOg_MulnS_0' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:12' bound to instance 'matrixAvg_mul_32seOg_MulnS_0_U' of component 'matrixAvg_mul_32seOg_MulnS_0' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'matrixAvg_mul_32seOg_MulnS_0' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:21]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:23]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'matrixAvg_mul_32seOg_MulnS_0' (5#1) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'matrixAvg_mul_32seOg' (6#1) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:67]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 34 - type: integer 
+	Parameter dout_WIDTH bound to: 65 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_mul_32seOg' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:51' bound to instance 'matrixAvg_mul_32seOg_U2' of component 'matrixAvg_mul_32seOg' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:646]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 34 - type: integer 
+	Parameter dout_WIDTH bound to: 65 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_mul_32seOg' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:51' bound to instance 'matrixAvg_mul_32seOg_U3' of component 'matrixAvg_mul_32seOg' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:661]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 4 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 7 - type: integer 
+	Parameter dout_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_mac_mulfYi' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mac_mulfYi.vhd:45' bound to instance 'matrixAvg_mac_mulfYi_U4' of component 'matrixAvg_mac_mulfYi' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:676]
+INFO: [Synth 8-638] synthesizing module 'matrixAvg_mac_mulfYi' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mac_mulfYi.vhd:60]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 4 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 7 - type: integer 
+	Parameter dout_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'matrixAvg_mac_mulfYi_DSP48_0' declared at '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mac_mulfYi.vhd:12' bound to instance 'matrixAvg_mac_mulfYi_DSP48_0_U' of component 'matrixAvg_mac_mulfYi_DSP48_0' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mac_mulfYi.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'matrixAvg_mac_mulfYi_DSP48_0' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mac_mulfYi.vhd:24]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'matrixAvg_mac_mulfYi_DSP48_0' (7#1) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mac_mulfYi.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'matrixAvg_mac_mulfYi' (8#1) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mac_mulfYi.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_dest_V_1_sel_rd_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:860]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_id_V_1_sel_rd_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:894]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_keep_V_1_sel_rd_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:928]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_strb_V_1_sel_rd_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1010]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_user_V_1_sel_rd_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1044]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state25_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1578]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1592]
+WARNING: [Synth 8-6014] Unused sequential element mat_in_TDATA_blk_n_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1829]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_TDATA_blk_n_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1879]
+WARNING: [Synth 8-6014] Unused sequential element cell_avg_green_we0_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:585]
+WARNING: [Synth 8-6014] Unused sequential element cell_avg_red_we0_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:557]
+WARNING: [Synth 8-6014] Unused sequential element mat_in_V_dest_V_0_ack_out_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:794]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_dest_V_1_vld_in_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:876]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_id_V_1_vld_in_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:910]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_keep_V_1_vld_in_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:944]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_last_V_1_vld_in_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:978]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_strb_V_1_vld_in_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1026]
+WARNING: [Synth 8-6014] Unused sequential element mat_out_V_user_V_1_vld_in_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1060]
+WARNING: [Synth 8-6014] Unused sequential element sum_green_ce0_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:626]
+WARNING: [Synth 8-6014] Unused sequential element sum_green_we0_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:627]
+WARNING: [Synth 8-6014] Unused sequential element sum_red_ce0_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:598]
+WARNING: [Synth 8-6014] Unused sequential element sum_red_we0_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:599]
+INFO: [Synth 8-256] done synthesizing module 'matrixAvg' (9#1) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'design_1_matrixAvg_0_0' (10#1) [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ip/design_1_matrixAvg_0_0/synth/design_1_matrixAvg_0_0.vhd:81]
+WARNING: [Synth 8-3331] design matrixAvg_mul_32seOg has unconnected port reset
+WARNING: [Synth 8-3331] design matrixAvg_cell_avbkb has unconnected port reset
+WARNING: [Synth 8-3331] design matrixAvg_red has unconnected port reset
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TKEEP[3]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TKEEP[2]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TKEEP[1]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TKEEP[0]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TSTRB[3]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TSTRB[2]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TSTRB[1]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TSTRB[0]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TUSER[0]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TLAST[0]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TID[0]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1308.320 ; gain = 113.512 ; free physical = 313565 ; free virtual = 327350
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1308.320 ; gain = 113.512 ; free physical = 313565 ; free virtual = 327351
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ip/design_1_matrixAvg_0_0/constraints/matrixAvg_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ip/design_1_matrixAvg_0_0/constraints/matrixAvg_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.runs/design_1_matrixAvg_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.runs/design_1_matrixAvg_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1682.348 ; gain = 0.004 ; free physical = 313297 ; free virtual = 327090
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1682.348 ; gain = 487.539 ; free physical = 313379 ; free virtual = 327172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1682.348 ; gain = 487.539 ; free physical = 313379 ; free virtual = 327172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/users/qi.zhou/Desktop/project_matrix/project_matrix.runs/design_1_matrixAvg_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1682.348 ; gain = 487.539 ; free physical = 313380 ; free virtual = 327173
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'sum_green_addr_1_reg_1039_reg[3:0]' into 'sum_blue_addr_1_reg_1049_reg[3:0]' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1348]
+INFO: [Synth 8-4471] merging register 'sum_red_addr_1_reg_1029_reg[3:0]' into 'sum_blue_addr_1_reg_1049_reg[3:0]' [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1349]
+WARNING: [Synth 8-6014] Unused sequential element sum_green_addr_1_reg_1039_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1348]
+WARNING: [Synth 8-6014] Unused sequential element sum_red_addr_1_reg_1029_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1349]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_fu_515_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_4_fu_532_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_8_fu_549_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_1_fu_566_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_578_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_7_fu_662_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond2_fu_888_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond3_fu_905_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond_fu_922_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tmp_9_fu_590_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mat_in_V_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mat_out_V_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mat_out_V_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_last_V_fu_939_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element i_3_reg_420_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1133]
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_next_reg_1006_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1179]
+WARNING: [Synth 8-6014] Unused sequential element tmp_3_mid2_v_v_reg_1017_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1190]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1682.348 ; gain = 487.539 ; free physical = 313371 ; free virtual = 327164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
++---Registers : 
+	               65 Bit    Registers := 6     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 19    
+	               26 Bit    Registers := 4     
+	               10 Bit    Registers := 8     
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 12    
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 15    
++---Multipliers : 
+	                32x35  Multipliers := 3     
++---RAMs : 
+	              28K Bit         RAMs := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 19    
+	   2 Input     26 Bit        Muxes := 2     
+	   3 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 15    
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 27    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module matrixAvg_red_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              28K Bit         RAMs := 1     
+Module matrixAvg_cell_avbkb_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module matrixAvg_mul_32seOg_MulnS_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
++---Multipliers : 
+	                32x35  Multipliers := 1     
+Module matrixAvg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
++---Registers : 
+	               65 Bit    Registers := 3     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 10    
+	               26 Bit    Registers := 4     
+	               10 Bit    Registers := 8     
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 12    
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   2 Input     26 Bit        Muxes := 2     
+	   3 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 15    
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 27    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+INFO: [Synth 8-5544] ROM "data71" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tmp_fu_515_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_4_fu_532_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_8_fu_549_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_578_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_9_fu_590_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:36]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:36]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg_mul_32seOg.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element i_3_reg_420_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1133]
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_next_reg_1006_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1179]
+WARNING: [Synth 8-6014] Unused sequential element tmp_3_mid2_v_v_reg_1017_reg was removed.  [/home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ipshared/a8fb/hdl/vhdl/matrixAvg.vhd:1190]
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product, operation Mode is: A*B.
+DSP Report: operator matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: operator matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg is absorbed into DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product, operation Mode is: A*B.
+DSP Report: operator matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: operator matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg is absorbed into DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product, operation Mode is: A*B.
+DSP Report: operator matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: operator matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg is absorbed into DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product, operation Mode is: A*B.
+DSP Report: operator matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: operator matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg is absorbed into DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product, operation Mode is: A*B.
+DSP Report: operator matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: operator matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg is absorbed into DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product, operation Mode is: A*B.
+DSP Report: operator matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: operator matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg is absorbed into DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+DSP Report: operator matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/tmp_product is absorbed into DSP matrixAvg_mul_32seOg_U3/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg.
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TKEEP[3]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TKEEP[2]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TKEEP[1]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TKEEP[0]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TSTRB[3]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TSTRB[2]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TSTRB[1]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TSTRB[0]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TUSER[0]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TLAST[0]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TID[0]
+WARNING: [Synth 8-3331] design matrixAvg has unconnected port mat_in_TDEST[0]
+INFO: [Synth 8-3886] merging instance 'U0/sum_blue_load_reg_1111_reg[31]' (FDE) to 'U0/tmp_36_reg_1116_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/sum_green_load_reg_1100_reg[31]' (FDE) to 'U0/tmp_33_reg_1105_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/sum_red_load_reg_1089_reg[31]' (FDE) to 'U0/tmp_30_reg_1094_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[0]' (FDE) to 'U0/mul_reg_1157_reg[39]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[1]' (FDE) to 'U0/mul_reg_1157_reg[40]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[2]' (FDE) to 'U0/mul_reg_1157_reg[41]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[3]' (FDE) to 'U0/mul_reg_1157_reg[42]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[4]' (FDE) to 'U0/mul_reg_1157_reg[43]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[5]' (FDE) to 'U0/mul_reg_1157_reg[44]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[6]' (FDE) to 'U0/mul_reg_1157_reg[45]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[7]' (FDE) to 'U0/mul_reg_1157_reg[46]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[8]' (FDE) to 'U0/mul_reg_1157_reg[47]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[9]' (FDE) to 'U0/mul_reg_1157_reg[48]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[10]' (FDE) to 'U0/mul_reg_1157_reg[49]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[11]' (FDE) to 'U0/mul_reg_1157_reg[50]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[12]' (FDE) to 'U0/mul_reg_1157_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[13]' (FDE) to 'U0/mul_reg_1157_reg[52]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[14]' (FDE) to 'U0/mul_reg_1157_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[15]' (FDE) to 'U0/mul_reg_1157_reg[54]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[16]' (FDE) to 'U0/mul_reg_1157_reg[55]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[17]' (FDE) to 'U0/mul_reg_1157_reg[56]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[18]' (FDE) to 'U0/mul_reg_1157_reg[57]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[19]' (FDE) to 'U0/mul_reg_1157_reg[58]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[20]' (FDE) to 'U0/mul_reg_1157_reg[59]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[21]' (FDE) to 'U0/mul_reg_1157_reg[60]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[22]' (FDE) to 'U0/mul_reg_1157_reg[61]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[23]' (FDE) to 'U0/mul_reg_1157_reg[62]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_38_reg_1162_reg[24]' (FDE) to 'U0/mul_reg_1157_reg[63]'
+INFO: [Synth 8-3886] merging instance 'U0/mul_reg_1157_reg[64]' (FDE) to 'U0/tmp_38_reg_1162_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[0]' (FDE) to 'U0/mul9_reg_1147_reg[39]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[1]' (FDE) to 'U0/mul9_reg_1147_reg[40]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[2]' (FDE) to 'U0/mul9_reg_1147_reg[41]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[3]' (FDE) to 'U0/mul9_reg_1147_reg[42]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[4]' (FDE) to 'U0/mul9_reg_1147_reg[43]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[5]' (FDE) to 'U0/mul9_reg_1147_reg[44]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[6]' (FDE) to 'U0/mul9_reg_1147_reg[45]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[7]' (FDE) to 'U0/mul9_reg_1147_reg[46]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[8]' (FDE) to 'U0/mul9_reg_1147_reg[47]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[9]' (FDE) to 'U0/mul9_reg_1147_reg[48]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[10]' (FDE) to 'U0/mul9_reg_1147_reg[49]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[11]' (FDE) to 'U0/mul9_reg_1147_reg[50]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[12]' (FDE) to 'U0/mul9_reg_1147_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[13]' (FDE) to 'U0/mul9_reg_1147_reg[52]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[14]' (FDE) to 'U0/mul9_reg_1147_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[15]' (FDE) to 'U0/mul9_reg_1147_reg[54]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[16]' (FDE) to 'U0/mul9_reg_1147_reg[55]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[17]' (FDE) to 'U0/mul9_reg_1147_reg[56]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[18]' (FDE) to 'U0/mul9_reg_1147_reg[57]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[19]' (FDE) to 'U0/mul9_reg_1147_reg[58]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[20]' (FDE) to 'U0/mul9_reg_1147_reg[59]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[21]' (FDE) to 'U0/mul9_reg_1147_reg[60]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[22]' (FDE) to 'U0/mul9_reg_1147_reg[61]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[23]' (FDE) to 'U0/mul9_reg_1147_reg[62]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_35_reg_1152_reg[24]' (FDE) to 'U0/mul9_reg_1147_reg[63]'
+INFO: [Synth 8-3886] merging instance 'U0/mul9_reg_1147_reg[64]' (FDE) to 'U0/tmp_35_reg_1152_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[0]' (FDE) to 'U0/mul1_reg_1137_reg[39]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[1]' (FDE) to 'U0/mul1_reg_1137_reg[40]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[2]' (FDE) to 'U0/mul1_reg_1137_reg[41]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[3]' (FDE) to 'U0/mul1_reg_1137_reg[42]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[4]' (FDE) to 'U0/mul1_reg_1137_reg[43]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[5]' (FDE) to 'U0/mul1_reg_1137_reg[44]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[6]' (FDE) to 'U0/mul1_reg_1137_reg[45]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[7]' (FDE) to 'U0/mul1_reg_1137_reg[46]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[8]' (FDE) to 'U0/mul1_reg_1137_reg[47]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[9]' (FDE) to 'U0/mul1_reg_1137_reg[48]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[10]' (FDE) to 'U0/mul1_reg_1137_reg[49]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[11]' (FDE) to 'U0/mul1_reg_1137_reg[50]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[12]' (FDE) to 'U0/mul1_reg_1137_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[13]' (FDE) to 'U0/mul1_reg_1137_reg[52]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[14]' (FDE) to 'U0/mul1_reg_1137_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[15]' (FDE) to 'U0/mul1_reg_1137_reg[54]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[16]' (FDE) to 'U0/mul1_reg_1137_reg[55]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[17]' (FDE) to 'U0/mul1_reg_1137_reg[56]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[18]' (FDE) to 'U0/mul1_reg_1137_reg[57]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[19]' (FDE) to 'U0/mul1_reg_1137_reg[58]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[20]' (FDE) to 'U0/mul1_reg_1137_reg[59]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[21]' (FDE) to 'U0/mul1_reg_1137_reg[60]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[22]' (FDE) to 'U0/mul1_reg_1137_reg[61]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[23]' (FDE) to 'U0/mul1_reg_1137_reg[62]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_32_reg_1142_reg[24]' (FDE) to 'U0/mul1_reg_1137_reg[63]'
+INFO: [Synth 8-3886] merging instance 'U0/mul1_reg_1137_reg[64]' (FDE) to 'U0/tmp_32_reg_1142_reg[25]'
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[47]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[46]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[45]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[44]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[43]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[42]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[41]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[40]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[39]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[38]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[37]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[36]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[35]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[34]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[33]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[32]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[31]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[30]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[29]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[28]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[27]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[26]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[25]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[24]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[23]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[22]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[21]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[20]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[19]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[18]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[17]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[47]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[46]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[45]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[44]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[43]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[42]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[41]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[40]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[39]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[38]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[37]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[36]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[35]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[34]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[33]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[32]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[31]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[30]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[29]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[28]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[27]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[26]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[25]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[24]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[23]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[22]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[21]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[20]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[19]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[18]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U1/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[17]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[47]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[46]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[45]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[44]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[43]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[42]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[41]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[40]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[39]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[38]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[37]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[36]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[35]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[34]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[33]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[32]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[31]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[30]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[29]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[28]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[27]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[26]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[25]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[24]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[23]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[22]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[21]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[20]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[19]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[18]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[17]) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[47]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[46]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[45]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[44]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[43]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[42]__0) is unused and will be removed from module matrixAvg.
+WARNING: [Synth 8-3332] Sequential element (matrixAvg_mul_32seOg_U2/matrixAvg_mul_32seOg_MulnS_0_U/p_tmp_reg[41]__0) is unused and will be removed from module matrixAvg.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1682.348 ; gain = 487.539 ; free physical = 313350 ; free virtual = 327142
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name        | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|matrixAvg_red_ram: | ram_reg    | 1 K x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 1      | 
+|matrixAvg_red_ram: | ram_reg    | 1 K x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 1      | 
+|matrixAvg_red_ram: | ram_reg    | 1 K x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 1      | 
++-------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------------------------+----------------+----------------------+-----------------+
+|Module Name | RTL Object                                          | Inference      | Size (Depth x Width) | Primitives      | 
++------------+-----------------------------------------------------+----------------+----------------------+-----------------+
+|U0          | sum_red_U/matrixAvg_cell_avbkb_ram_U/ram_reg        | User Attribute | 16 x 32              | RAM16X1S x 32   | 
+|U0          | cell_avg_red_U/matrixAvg_cell_avbkb_ram_U/ram_reg   | User Attribute | 16 x 32              | RAM16X1S x 32   | 
+|U0          | sum_green_U/matrixAvg_cell_avbkb_ram_U/ram_reg      | User Attribute | 16 x 32              | RAM16X1S x 32   | 
+|U0          | cell_avg_green_U/matrixAvg_cell_avbkb_ram_U/ram_reg | User Attribute | 16 x 32              | RAM16X1S x 32   | 
+|U0          | sum_blue_U/matrixAvg_cell_avbkb_ram_U/ram_reg       | User Attribute | 16 x 32              | RAM16X1S x 32   | 
+|U0          | cell_avg_blue_U/matrixAvg_cell_avbkb_ram_U/ram_reg  | User Attribute | 16 x 32              | RAM16X1S x 32   | 
++------------+-----------------------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|matrixAvg_mac_mulfYi_DSP48_0 | C+A*B          | 9      | 5      | 8      | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|matrixAvg                    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixAvg                    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matrixAvg                    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixAvg                    | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matrixAvg                    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixAvg                    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matrixAvg                    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixAvg                    | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matrixAvg                    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixAvg                    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|matrixAvg                    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrixAvg                    | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++-----------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1682.348 ; gain = 487.539 ; free physical = 313177 ; free virtual = 326969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1682.348 ; gain = 487.539 ; free physical = 313172 ; free virtual = 326963
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/red_U/matrixAvg_red_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/green_U/matrixAvg_red_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/blue_U/matrixAvg_red_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1711.883 ; gain = 517.074 ; free physical = 313158 ; free virtual = 326949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1711.883 ; gain = 517.074 ; free physical = 313161 ; free virtual = 326953
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1711.883 ; gain = 517.074 ; free physical = 313161 ; free virtual = 326953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1711.883 ; gain = 517.074 ; free physical = 313161 ; free virtual = 326952
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1711.883 ; gain = 517.074 ; free physical = 313161 ; free virtual = 326952
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1711.883 ; gain = 517.074 ; free physical = 313161 ; free virtual = 326952
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1711.883 ; gain = 517.074 ; free physical = 313161 ; free virtual = 326952
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   138|
+|2     |DSP48E1_1 |     6|
+|3     |DSP48E1_2 |     6|
+|4     |DSP48E1_3 |     1|
+|5     |LUT1      |   311|
+|6     |LUT2      |   289|
+|7     |LUT3      |   480|
+|8     |LUT4      |    66|
+|9     |LUT5      |   188|
+|10    |LUT6      |    50|
+|11    |RAM16X1S  |   192|
+|12    |RAMB36E1  |     3|
+|13    |FDRE      |   997|
+|14    |FDSE      |    22|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+--------------------------------+------+
+|      |Instance                             |Module                          |Cells |
++------+-------------------------------------+--------------------------------+------+
+|1     |top                                  |                                |  2749|
+|2     |  U0                                 |matrixAvg                       |  2749|
+|3     |    blue_U                           |matrixAvg_red                   |    36|
+|4     |      matrixAvg_red_ram_U            |matrixAvg_red_ram_17            |    36|
+|5     |    cell_avg_blue_U                  |matrixAvg_cell_avbkb            |   135|
+|6     |      matrixAvg_cell_avbkb_ram_U     |matrixAvg_cell_avbkb_ram_16     |   135|
+|7     |    cell_avg_green_U                 |matrixAvg_cell_avbkb_0          |   101|
+|8     |      matrixAvg_cell_avbkb_ram_U     |matrixAvg_cell_avbkb_ram_15     |   101|
+|9     |    cell_avg_red_U                   |matrixAvg_cell_avbkb_1          |   101|
+|10    |      matrixAvg_cell_avbkb_ram_U     |matrixAvg_cell_avbkb_ram_14     |   101|
+|11    |    green_U                          |matrixAvg_red_2                 |     4|
+|12    |      matrixAvg_red_ram_U            |matrixAvg_red_ram_13            |     4|
+|13    |    matrixAvg_mac_mulfYi_U4          |matrixAvg_mac_mulfYi            |    63|
+|14    |      matrixAvg_mac_mulfYi_DSP48_0_U |matrixAvg_mac_mulfYi_DSP48_0    |    63|
+|15    |    matrixAvg_mul_32seOg_U1          |matrixAvg_mul_32seOg            |   134|
+|16    |      matrixAvg_mul_32seOg_MulnS_0_U |matrixAvg_mul_32seOg_MulnS_0_12 |   134|
+|17    |    matrixAvg_mul_32seOg_U2          |matrixAvg_mul_32seOg_3          |   134|
+|18    |      matrixAvg_mul_32seOg_MulnS_0_U |matrixAvg_mul_32seOg_MulnS_0_11 |   134|
+|19    |    matrixAvg_mul_32seOg_U3          |matrixAvg_mul_32seOg_4          |   134|
+|20    |      matrixAvg_mul_32seOg_MulnS_0_U |matrixAvg_mul_32seOg_MulnS_0    |   134|
+|21    |    red_U                            |matrixAvg_red_5                 |     4|
+|22    |      matrixAvg_red_ram_U            |matrixAvg_red_ram               |     4|
+|23    |    sum_blue_U                       |matrixAvg_cell_avbkb_6          |   176|
+|24    |      matrixAvg_cell_avbkb_ram_U     |matrixAvg_cell_avbkb_ram_10     |   176|
+|25    |    sum_green_U                      |matrixAvg_cell_avbkb_7          |   167|
+|26    |      matrixAvg_cell_avbkb_ram_U     |matrixAvg_cell_avbkb_ram_9      |   167|
+|27    |    sum_red_U                        |matrixAvg_cell_avbkb_8          |   167|
+|28    |      matrixAvg_cell_avbkb_ram_U     |matrixAvg_cell_avbkb_ram        |   167|
++------+-------------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1711.883 ; gain = 517.074 ; free physical = 313161 ; free virtual = 326952
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 215 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1711.883 ; gain = 143.047 ; free physical = 313230 ; free virtual = 327021
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1711.891 ; gain = 517.074 ; free physical = 313230 ; free virtual = 327021
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 346 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 192 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 192 instances
+
+189 Infos, 167 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1743.902 ; gain = 561.672 ; free physical = 313219 ; free virtual = 327010
+INFO: [Common 17-1381] The checkpoint '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.runs/design_1_matrixAvg_0_0_synth_1/design_1_matrixAvg_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/users/qi.zhou/Desktop/project_matrix/project_matrix.srcs/sources_1/bd/design_1/ip/design_1_matrixAvg_0_0/design_1_matrixAvg_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 27 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/users/qi.zhou/Desktop/project_matrix/project_matrix.runs/design_1_matrixAvg_0_0_synth_1/design_1_matrixAvg_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1767.918 ; gain = 0.000 ; free physical = 313212 ; free virtual = 327014
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 30 19:35:35 2018...

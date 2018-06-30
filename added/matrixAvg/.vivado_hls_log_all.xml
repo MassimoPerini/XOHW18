@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-21] The critical path consists of the following:&#xA;&#x9;'mul' operation ('tmp_3_mid2', matrix.cpp:86) (3.36 ns)&#xA;&#x9;'add' operation ('tmp_5', matrix.cpp:86) (3.02 ns)&#xA;&#x9;'getelementptr' operation ('red_addr_1', matrix.cpp:86) (0 ns)&#xA;&#x9;'load' operation ('red_load', matrix.cpp:86) on array 'red', matrix.cpp:48 (3.25 ns)" projectName="matrixAvg" solutionName="solution1" date="2018-06-30T19:25:53.336+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (9.63ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="matrixAvg" solutionName="solution1" date="2018-06-30T19:25:53.327+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between 'store' operation (matrix.cpp:88) of variable 'tmp_17', matrix.cpp:88 on array 'sum_blue', matrix.cpp:55 and 'load' operation ('sum_blue_load_1', matrix.cpp:88) on array 'sum_blue', matrix.cpp:55." projectName="matrixAvg" solutionName="solution1" date="2018-06-30T19:25:53.306+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,11 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+vhdl xil_defaultlib "AESL_automem_agg_result_green.vhd"
+vhdl xil_defaultlib "AESL_automem_agg_result_blue.vhd"
+vhdl xil_defaultlib "matrixAvg_mul_34nbkb.vhd"
+vhdl xil_defaultlib "matrixAvg.vhd"
+vhdl xil_defaultlib "AESL_automem_agg_result_red.vhd"
+vhdl xil_defaultlib "matrixAvg.autotb.vhd"
+vhdl xil_defaultlib "AESL_automem_input_blue.vhd"
+vhdl xil_defaultlib "AESL_automem_input_green.vhd"
+vhdl xil_defaultlib "AESL_automem_input_red.vhd"
+

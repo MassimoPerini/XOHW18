@@ -1,0 +1,58 @@
+#pragma line 1 "/home/users/qi.zhou/Desktop/matrix.c"
+#pragma line 1 "<built-in>"
+#pragma line 1 "<command-line>"
+#pragma line 1 "/home/users/qi.zhou/Desktop/matrix.c"
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+typedef struct cell{
+ int red[20];
+ int blue[20];
+ int green[20];
+}Cell;
+#pragma empty_line
+typedef struct average{
+ int red[2];
+ int blue[2];
+ int green[2];
+}Average;
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+Average matrixAvg(Cell input){
+ int* red = input.red;
+ int* green = input.green;
+ int* blue = input.blue;
+ Average cell_avg;
+#pragma empty_line
+ unsigned int i = 0;
+ unsigned int sum_red[2];
+ unsigned int sum_blue[2];
+ unsigned int sum_green[2];
+ unsigned int j = 0;
+ sum_red[0]=0;
+ sum_blue[0]=0;
+ sum_green[0]=0;
+#pragma empty_line
+ for(j=0;j<2;j++){
+  sum_red[j]=0;
+  sum_blue[j]=0;
+  sum_green[j]=0;
+  for(i=0;i<10;i++){
+#pragma empty_line
+   sum_red[j]+=red[j*10 +i];
+   sum_green[j]+=green[j*10 +i];
+   sum_blue[j] += blue[j*10 +i];
+  }
+ }
+#pragma empty_line
+ for(i=0;i<2;i++){
+#pragma empty_line
+  cell_avg.red[i] = sum_red[i]/10;
+  cell_avg.green[i] = sum_green[i]/10;
+  cell_avg.blue[i] = sum_blue[i]/10;
+ }
+#pragma empty_line
+ return cell_avg;
+}
