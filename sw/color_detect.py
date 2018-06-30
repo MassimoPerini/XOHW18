@@ -15,14 +15,14 @@ import matplotlib.pyplot as plt
 from pynq import Overlay
 import numpy as np
 from pynq import Xlnk
-ol = Overlay("matrixAvgFinal.bit")
+ol = Overlay("matrixAvgFinal.bit") #importing the overley to use the fpga
 ol.download()
 
 
 # In[20]:
 
 
-def rgb_to_hsl(red, green, blue):
+def rgb_to_hsl(red, green, blue): #convert 3 value rgb to value hsl
     red = float(red)
     green = float(green)
     blue = float(blue)
@@ -42,7 +42,7 @@ def rgb_to_hsl(red, green, blue):
             blue: (red - green) / d + 4,
         }[high]
         h /= 6
-    
+
     if l>93:
         return 300
     return h
@@ -51,46 +51,46 @@ def rgb_to_hsl(red, green, blue):
 # In[21]:
 
 
-def matrixAvg(red,green,blue):
+def matrixAvg(red,green,blue):  #communicates with fpga,to write and read the input and the outputs of the fpga
     dma0 = ol.axi_dma_0
     xlnk = Xlnk()
     inputs = xlnk.cma_array(shape=(2700), dtype=np.int32)
     outputs = xlnk.cma_array(shape=(27), dtype=np.int32)
 
     inputs= red+green+blue
-    
+
     dma0.sendchannel.transfer(inputs)
     dma0.sendchannel.wait()
     dma0.recvchannel.transfer(outputs)
     dma0.recvchannel.wait()
 
-    
+
     return outputs
 
 
 # In[24]:
 
 
-def recon_face_cube(cube_image):
+def recon_face_cube(cube_image): # main , cube_image is the name of the file image of the cube
     big_image = cv2.imread(cube_image)
-    image = cv2.resize(big_image, (30, 30)) 
+    image = cv2.resize(big_image, (30, 30))
     blue =[]
     for m in range(3):
         for n in range(3):
             for y in range(10):
                 for x in range(10):
-                    blue.append(int(image[x+n*10][y+m*10][0]))
+                    blue.append(int(image[x+n*10][y+m*10][0])) #creates array because we have to write a single array in the memory
                     green.append(int(image[x+n*10][y+m*10][1]))
                     red.append(int(image[x+n*10][y+m*10][2]))
     result = matrixAvg(red,green,blue)
-    
+
     red = result[0:9]
     green= result[9:18]
     blue = result[18:27]
     color_result =[]
-    for i in range(9):
+    for i in range(9):   #confronts the results to find out which color the cell of the cube is
         h =rgb_to_hsl(red[i],green[i],blue[i])
-        if 0<h<15:
+        if 0<h<15:# Red, Yellow, Orange, Green, Blue,White
             color_result.append("R")
         elif 50<h<67:
             color_result.append("Y")
@@ -102,6 +102,5 @@ def recon_face_cube(cube_image):
             color_result.append("B")
         elif h==300:
             color_result.append("W")
-
-
-
+    print(color_result)
+    return color_result
